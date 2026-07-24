@@ -7,7 +7,7 @@ A tracking Sleeve that lets you control a robotic claw, with the movements of yo
 This project repo consists of:
 
 
-*   📁 **`STL-Files/`** — The scale-accurate, high-strength 3D model parts for each segment of the robot arm chassis and wearable arm sleeve.
+*   📁 **`STL Files/`** — The scale-accurate, high-strength 3D model parts for each segment of the robot arm chassis and wearable arm sleeve.
 
 *   📁 **`Firmware/`** — The complete code for the finished product:
  *   `Transmitter_Node.ino` — Code for the wearable sleeve's segments tracking IMU and flex sensor data over ESP-NOW.
