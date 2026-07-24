@@ -1,4 +1,4 @@
- Robot Mimic Arm
+# Robot Mimic Arm
 
 The official repo for the ESP32-Based 5 Axis Robotic Arm
 
@@ -11,7 +11,7 @@ This project repo consists of:
 
 *   📁 **`Firmware/`** — The complete code for the finished product:
  *   `Transmitter_Node.ino` — Code for the wearable sleeve's segments tracking IMU and flex sensor data over ESP-NOW.
-    *   `Receiver_Node.ino` — Code for the central robot base responsible for handling the wireless packets from the wearable and driving the PCA9685 PWM servos.
+ *   `Receiver_Node.ino` — Code for the central robot base responsible for handling the wireless packets from the wearable and driving the PCA9685 PWM servos.
 
 *   📁 **`Bonus Prototypes & Extras/`** — Early development prints, sandboxed drivers, validation scripts, and some noticeable moments from start to finish:
     *   `Wired_SingleNode_Core.ino` — The initial framework executing 1:1 responsive orientation mapping using ajust  single ESP32, MPU6050, and servo.
