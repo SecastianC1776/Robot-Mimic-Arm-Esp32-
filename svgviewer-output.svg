@@ -1,0 +1,246 @@
+<svg viewBox="0 0 1700 1180" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow-power" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#f97316"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-yellow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#b45309"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-black" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1f2937"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1700" height="1180" fill="#ffffff"/>
+
+  <text x="850" y="34" text-anchor="middle" font-size="24" font-weight="700" fill="#111827">Robotic Mimic Arm — Wiring Diagram</text>
+  <text x="850" y="56" text-anchor="middle" font-size="14" fill="#6b7280">Sensor Island shown once — identical x3 (Hand / Forearm / Bicep). Flex sensor sub-circuit exists on Hand island only.</text>
+
+  <rect x="30" y="80" width="760" height="520" rx="10" fill="#fafaf9" stroke="#a8a29e" stroke-width="2"/>
+  <text x="410" y="108" text-anchor="middle" font-size="17" font-weight="700" fill="#374151">SENSOR ISLAND (x3 — Wearable Sleeve)</text>
+
+  <rect x="60" y="140" width="150" height="60" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+  <text x="135" y="165" text-anchor="middle" font-size="12" font-weight="600" fill="#4c1d95">2S LiPo Battery</text>
+  <text x="135" y="182" text-anchor="middle" font-size="11" fill="#4c1d95">7.4V - 8.4V, 800mAh</text>
+
+  <rect x="60" y="250" width="150" height="60" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+  <text x="135" y="275" text-anchor="middle" font-size="12" font-weight="600" fill="#4c1d95">IP2326 Charger</text>
+  <text x="135" y="292" text-anchor="middle" font-size="11" fill="#4c1d95">Type-C in, 2S balance</text>
+
+  <line x1="135" y1="200" x2="135" y2="250" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arrow-purple)" marker-start="url(#arrow-purple)"/>
+
+  <rect x="280" y="140" width="150" height="60" rx="6" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+  <text x="355" y="165" text-anchor="middle" font-size="12" font-weight="600" fill="#9a3412">MP1584EN Buck</text>
+  <text x="355" y="182" text-anchor="middle" font-size="11" fill="#9a3412">7.4-8.4V -&gt; 5V</text>
+
+  <line x1="210" y1="170" x2="280" y2="170" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arrow-purple)"/>
+
+  <rect x="450" y="120" width="160" height="100" rx="6" fill="#ecfeff" stroke="#0891b2" stroke-width="2.5"/>
+  <text x="530" y="145" text-anchor="middle" font-size="13" font-weight="700" fill="#164e63">ESP32-S3</text>
+  <text x="530" y="162" text-anchor="middle" font-size="11" fill="#164e63">(Sensor Island)</text>
+  <text x="530" y="179" text-anchor="middle" font-size="10" fill="#0e7490">N16R8, Ext Antenna</text>
+  <text x="530" y="195" text-anchor="middle" font-size="10" fill="#0e7490">GPIO21=SDA GPIO22=SCL</text>
+
+  <line x1="430" y1="170" x2="450" y2="170" stroke="#f97316" stroke-width="2.5" marker-end="url(#arrow-orange)"/>
+  <text x="440" y="163" text-anchor="middle" font-size="9" fill="#9a3412">5V</text>
+
+  <rect x="630" y="120" width="130" height="55" rx="6" fill="#f3f4f6" stroke="#4b5563" stroke-width="2"/>
+  <text x="695" y="143" text-anchor="middle" font-size="12" font-weight="600" fill="#1f2937">Antenna</text>
+  <text x="695" y="159" text-anchor="middle" font-size="10" fill="#1f2937">2.4GHz 3dBi</text>
+  <line x1="610" y1="147" x2="630" y2="147" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow-black)"/>
+  <text x="620" y="142" text-anchor="middle" font-size="9" fill="#1f2937">U.FL</text>
+
+  <rect x="60" y="350" width="150" height="70" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="135" y="375" text-anchor="middle" font-size="12" font-weight="600" fill="#1e3a8a">MPU6050 IMU</text>
+  <text x="135" y="391" text-anchor="middle" font-size="10" fill="#1e3a8a">I2C: SDA / SCL</text>
+  <text x="135" y="406" text-anchor="middle" font-size="10" fill="#1e3a8a">VCC 3.3V / GND</text>
+
+  <path d="M 460 220 C 460 280, 280 365, 210 365" fill="none" stroke="#f97316" stroke-width="2" marker-end="url(#arrow-orange)"/>
+  <text x="240" y="360" font-size="9" fill="#9a3412">3.3V</text>
+
+  <path d="M 475 220 C 475 295, 280 380, 210 380" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <text x="240" y="375" font-size="9" fill="#1e3a8a">SDA</text>
+
+  <path d="M 490 220 C 490 310, 280 395, 210 395" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <text x="240" y="390" font-size="9" fill="#1e3a8a">SCL</text>
+
+  <path d="M 505 220 C 505 325, 280 410, 210 410" fill="none" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow-black)"/>
+  <text x="240" y="405" font-size="9" fill="#1f2937">GND</text>
+
+  <rect x="420" y="330" width="340" height="140" rx="8" fill="#fef9c3" stroke="#b45309" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="590" y="352" text-anchor="middle" font-size="12" font-weight="700" fill="#78350f">FLEX SENSOR CIRCUIT — Hand island only</text>
+
+  <rect x="440" y="370" width="90" height="45" rx="4" fill="#fffbeb" stroke="#b45309" stroke-width="1.5"/>
+  <text x="485" y="392" text-anchor="middle" font-size="10" fill="#78350f">Fixed R</text>
+  <text x="485" y="405" text-anchor="middle" font-size="9" fill="#78350f">(divider)</text>
+
+  <rect x="570" y="370" width="140" height="45" rx="4" fill="#fffbeb" stroke="#b45309" stroke-width="1.5"/>
+  <text x="640" y="392" text-anchor="middle" font-size="10" fill="#78350f">Flex Sensor 2.2in</text>
+  <text x="640" y="405" text-anchor="middle" font-size="9" fill="#78350f">(index finger)</text>
+
+  <path d="M 520 220 C 520 290, 485 290, 485 370" fill="none" stroke="#f97316" stroke-width="2" marker-end="url(#arrow-orange)"/>
+  <text x="495" y="300" text-anchor="middle" font-size="9" fill="#9a3412">3.3V</text>
+
+  <line x1="530" y1="392" x2="570" y2="392" stroke="#78350f" stroke-width="2"/>
+  
+  <path d="M 550 392 C 550 300, 540 300, 540 220" fill="none" stroke="#2563eb" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrow-blue)"/>
+  <text x="565" y="270" text-anchor="middle" font-size="9" fill="#1e3a8a">GPIO4 (ADC)</text>
+
+  <path d="M 710 392 C 740 392, 740 190, 610 190" fill="none" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow-black)"/>
+  <text x="745" y="290" text-anchor="middle" font-size="9" fill="#1f2937">GND</text>
+
+  <path d="M 580 220 C 580 350, 740 400, 740 500" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-dasharray="8,5" marker-end="url(#arrow-green)"/>
+  <text x="760" y="530" text-anchor="middle" font-size="12" font-weight="600" fill="#166534">ESP-NOW / Wi-Fi</text>
+  <text x="760" y="546" text-anchor="middle" font-size="11" fill="#166534">to Command Center</text>
+  <text x="760" y="562" text-anchor="middle" font-size="10" fill="#166534">(x3 islands, all identical)</text>
+
+  <rect x="850" y="80" width="800" height="1050" rx="10" fill="#fafaf9" stroke="#a8a29e" stroke-width="2"/>
+  <text x="1250" y="108" text-anchor="middle" font-size="17" font-weight="700" fill="#374151">COMMAND CENTER + ROBOT BASE (single build)</text>
+
+  <rect x="880" y="140" width="170" height="60" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="965" y="165" text-anchor="middle" font-size="12" font-weight="700" fill="#7f1d1d">6V 10A (60W)</text>
+  <text x="965" y="182" text-anchor="middle" font-size="11" fill="#7f1d1d">Power Supply</text>
+
+  <rect x="1090" y="145" width="110" height="50" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="1145" y="167" text-anchor="middle" font-size="12" font-weight="700" fill="#7f1d1d">FUSE</text>
+  <text x="1145" y="182" text-anchor="middle" font-size="10" fill="#7f1d1d">10A inline</text>
+
+  <line x1="1050" y1="170" x2="1090" y2="170" stroke="#dc2626" stroke-width="3" marker-end="url(#arrow-power)"/>
+
+  <rect x="1260" y="130" width="170" height="90" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="1345" y="158" text-anchor="middle" font-size="13" font-weight="700" fill="#14532d">PCA9685</text>
+  <text x="1345" y="174" text-anchor="middle" font-size="10" fill="#14532d">16-Ch PWM Driver</text>
+  <text x="1345" y="190" text-anchor="middle" font-size="10" fill="#14532d">V+ / VCC / GND / PWM0-5</text>
+  <text x="1345" y="206" text-anchor="middle" font-size="10" fill="#14532d">SDA / SCL</text>
+
+  <line x1="1200" y1="165" x2="1260" y2="165" stroke="#dc2626" stroke-width="3" marker-end="url(#arrow-power)"/>
+  <text x="1230" y="158" text-anchor="middle" font-size="9" fill="#7f1d1d">V+ (6V)</text>
+
+  <rect x="1260" y="240" width="170" height="55" rx="6" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+  <text x="1345" y="263" text-anchor="middle" font-size="11" font-weight="600" fill="#9a3412">Electrolytic Cap</text>
+  <text x="1345" y="279" text-anchor="middle" font-size="10" fill="#9a3412">across V+ / GND (smoothing)</text>
+  <line x1="1300" y1="220" x2="1300" y2="240" stroke="#dc2626" stroke-width="2"/>
+  <line x1="1390" y1="220" x2="1390" y2="240" stroke="#1f2937" stroke-width="2"/>
+
+  <text x="1600" y="120" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">6x Servos</text>
+  <rect x="1500" y="130" width="170" height="42" rx="5" fill="#fefce8" stroke="#b45309" stroke-width="2"/>
+  <text x="1585" y="155" text-anchor="middle" font-size="11" font-weight="600" fill="#78350f">Servo 1 — Shoulder A</text>
+  <rect x="1500" y="182" width="170" height="42" rx="5" fill="#fefce8" stroke="#b45309" stroke-width="2"/>
+  <text x="1585" y="207" text-anchor="middle" font-size="11" font-weight="600" fill="#78350f">Servo 2 — Shoulder B</text>
+  <rect x="1500" y="234" width="170" height="42" rx="5" fill="#fefce8" stroke="#b45309" stroke-width="2"/>
+  <text x="1585" y="259" text-anchor="middle" font-size="11" font-weight="600" fill="#78350f">Servo 3 — Elbow</text>
+  <rect x="1500" y="286" width="170" height="42" rx="5" fill="#fefce8" stroke="#b45309" stroke-width="2"/>
+  <text x="1585" y="311" text-anchor="middle" font-size="11" font-weight="600" fill="#78350f">Servo 4 — Wrist A</text>
+  <rect x="1500" y="338" width="170" height="42" rx="5" fill="#fefce8" stroke="#b45309" stroke-width="2"/>
+  <text x="1585" y="363" text-anchor="middle" font-size="11" font-weight="600" fill="#78350f">Servo 5 — Wrist B</text>
+  <rect x="1500" y="390" width="170" height="42" rx="5" fill="#fefce8" stroke="#b45309" stroke-width="2"/>
+  <text x="1585" y="415" text-anchor="middle" font-size="11" font-weight="600" fill="#78350f">Servo 6 — Claw</text>
+
+  <line x1="1430" y1="150" x2="1470" y2="150" stroke="#dc2626" stroke-width="2.5"/>
+  <line x1="1470" y1="150" x2="1470" y2="405" stroke="#dc2626" stroke-width="2.5"/>
+  <line x1="1470" y1="151" x2="1500" y2="151" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-power)"/>
+  <line x1="1470" y1="203" x2="1500" y2="203" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-power)"/>
+  <line x1="1470" y1="255" x2="1500" y2="255" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-power)"/>
+  <line x1="1470" y1="307" x2="1500" y2="307" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-power)"/>
+  <line x1="1470" y1="359" x2="1500" y2="359" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-power)"/>
+  <line x1="1470" y1="405" x2="1500" y2="405" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-power)"/>
+  <text x="1478" y="145" font-size="9" fill="#7f1d1d">V+ bus</text>
+
+  <line x1="1430" y1="165" x2="1485" y2="165" stroke="#1f2937" stroke-width="2"/>
+  <line x1="1485" y1="165" x2="1485" y2="420" stroke="#1f2937" stroke-width="2"/>
+  <line x1="1485" y1="164" x2="1500" y2="164" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow-black)"/>
+  <line x1="1485" y1="216" x2="1500" y2="216" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow-black)"/>
+  <line x1="1485" y1="268" x2="1500" y2="268" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow-black)"/>
+  <line x1="1485" y1="320" x2="1500" y2="320" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow-black)"/>
+  <line x1="1485" y1="372" x2="1500" y2="372" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow-black)"/>
+  <line x1="1485" y1="420" x2="1500" y2="420" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow-black)"/>
+  <text x="1490" y="440" font-size="9" fill="#1f2937">GND bus</text>
+
+  <line x1="1430" y1="180" x2="1500" y2="163" stroke="#b45309" stroke-width="2" marker-end="url(#arrow-yellow)"/>
+  <text x="1450" y="180" font-size="8" fill="#78350f">PWM0</text>
+  <line x1="1430" y1="185" x2="1500" y2="215" stroke="#b45309" stroke-width="2" marker-end="url(#arrow-yellow)"/>
+  <text x="1450" y="200" font-size="8" fill="#78350f">PWM1</text>
+  <line x1="1430" y1="190" x2="1500" y2="267" stroke="#b45309" stroke-width="2" marker-end="url(#arrow-yellow)"/>
+  <text x="1450" y="230" font-size="8" fill="#78350f">PWM2</text>
+  <line x1="1430" y1="195" x2="1500" y2="319" stroke="#b45309" stroke-width="2" marker-end="url(#arrow-yellow)"/>
+  <text x="1450" y="260" font-size="8" fill="#78350f">PWM3</text>
+  <line x1="1430" y1="200" x2="1500" y2="371" stroke="#b45309" stroke-width="2" marker-end="url(#arrow-yellow)"/>
+  <text x="1450" y="290" font-size="8" fill="#78350f">PWM4</text>
+  <line x1="1430" y1="205" x2="1500" y2="423" stroke="#b45309" stroke-width="2" marker-end="url(#arrow-yellow)"/>
+  <text x="1450" y="320" font-size="8" fill="#78350f">PWM5</text>
+
+  <rect x="1090" y="440" width="170" height="60" rx="6" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+  <text x="1175" y="465" text-anchor="middle" font-size="12" font-weight="600" fill="#9a3412">MP1584EN Buck</text>
+  <text x="1175" y="482" text-anchor="middle" font-size="11" fill="#9a3412">6V -&gt; 5V (logic)</text>
+
+  <line x1="1145" y1="195" x2="1145" y2="440" stroke="#dc2626" stroke-width="3" marker-end="url(#arrow-power)"/>
+  <text x="1160" y="330" font-size="9" fill="#7f1d1d">from fuse</text>
+
+  <rect x="880" y="440" width="170" height="100" rx="6" fill="#ecfeff" stroke="#0891b2" stroke-width="2.5"/>
+  <text x="965" y="468" text-anchor="middle" font-size="13" font-weight="700" fill="#164e63">ESP32-S3</text>
+  <text x="965" y="485" text-anchor="middle" font-size="11" fill="#164e63">(Command Center)</text>
+  <text x="965" y="502" text-anchor="middle" font-size="10" fill="#0e7490">GPIO21=SDA GPIO22=SCL</text>
+  <text x="965" y="518" text-anchor="middle" font-size="10" fill="#0e7490">N16R8, External Antenna</text>
+
+  <line x1="1090" y1="470" x2="1050" y2="470" stroke="#f97316" stroke-width="2.5" marker-end="url(#arrow-orange)"/>
+  <text x="1070" y="463" text-anchor="middle" font-size="9" fill="#9a3412">5V</text>
+
+  <rect x="880" y="570" width="170" height="55" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="965" y="593" text-anchor="middle" font-size="12" font-weight="600" fill="#1e3a8a">OLED Display</text>
+  <text x="965" y="609" text-anchor="middle" font-size="10" fill="#1e3a8a">Base diagnostics</text>
+
+  <rect x="1090" y="570" width="150" height="55" rx="6" fill="#f3f4f6" stroke="#4b5563" stroke-width="2"/>
+  <text x="1165" y="593" text-anchor="middle" font-size="12" font-weight="600" fill="#1f2937">Antenna</text>
+  <text x="1165" y="609" text-anchor="middle" font-size="10" fill="#1f2937">U.FL - SMA, 3dBi</text>
+
+  <line x1="965" y1="540" x2="965" y2="570" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <text x="985" y="558" font-size="9" fill="#1e3a8a">SDA/SCL</text>
+  <line x1="1050" y1="480" x2="1090" y2="590" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow-black)"/>
+  <text x="1075" y="530" font-size="9" fill="#1f2937">U.FL</text>
+
+  <line x1="1050" y1="460" x2="1345" y2="220" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrow-blue)"/>
+  <text x="1200" y="380" text-anchor="middle" font-size="10" fill="#1e3a8a">I2C: SDA / SCL (shared bus w/ PCA9685 + OLED)</text>
+
+  <path d="M 660 720 C 730 720, 780 500, 870 500" stroke="#16a34a" stroke-width="2.5" fill="none" stroke-dasharray="8,5" marker-end="url(#arrow-green)"/>
+  <text x="600" y="740" text-anchor="middle" font-size="12" font-weight="600" fill="#166534">Incoming ESP-NOW / Wi-Fi</text>
+  <text x="600" y="756" text-anchor="middle" font-size="11" fill="#166534">from 3x Sensor Islands</text>
+
+  <rect x="850" y="900" width="800" height="220" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="1250" y="928" text-anchor="middle" font-size="14" font-weight="700" fill="#111827">LEGEND</text>
+
+  <line x1="880" y1="950" x2="930" y2="950" stroke="#7c3aed" stroke-width="3"/>
+  <text x="940" y="955" font-size="12" fill="#374151">Battery / 2S power domain (7.4-8.4V)</text>
+
+  <line x1="880" y1="978" x2="930" y2="978" stroke="#dc2626" stroke-width="3"/>
+  <text x="940" y="983" font-size="12" fill="#374151">Unregulated servo power rail (6V, fused)</text>
+
+  <line x1="880" y1="1006" x2="930" y2="1006" stroke="#f97316" stroke-width="3"/>
+  <text x="940" y="1011" font-size="12" fill="#374151">Regulated 5V logic power</text>
+
+  <line x1="880" y1="1034" x2="930" y2="1034" stroke="#2563eb" stroke-width="3"/>
+  <text x="940" y="1039" font-size="12" fill="#374151">I2C data bus (SDA / SCL)</text>
+
+  <line x1="1250" y1="950" x2="1300" y2="950" stroke="#b45309" stroke-width="3"/>
+  <text x="1310" y="955" font-size="12" fill="#374151">PWM servo signal</text>
+
+  <line x1="1250" y1="978" x2="1300" y2="978" stroke="#1f2937" stroke-width="3"/>
+  <text x="1310" y="983" font-size="12" fill="#374151">Ground (GND)</text>
+
+  <line x1="1250" y1="1006" x2="1300" y2="1006" stroke="#16a34a" stroke-width="3" stroke-dasharray="8,5"/>
+  <text x="1310" y="1011" font-size="12" fill="#374151">Wireless (ESP-NOW / Wi-Fi)</text>
+
+  <text x="880" y="1075" font-size="11" fill="#6b7280">Note: Sensor Island wiring (left panel) is duplicated identically x3, once each for Hand, Forearm, and Bicep segments.</text>
+  <text x="880" y="1093" font-size="11" fill="#6b7280">Only the Hand island includes the flex-sensor sub-circuit. Command Center + Robot Base wiring (right panel) exists once.</text>
+</svg>
