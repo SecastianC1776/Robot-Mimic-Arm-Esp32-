@@ -1,13 +1,15 @@
+<img width="1171" height="740" alt="image" src="https://github.com/user-attachments/assets/3198485d-42a6-4c53-b6ea-411cb913dd8c" />
+
 # Robot Mimic Arm 🦾
 
-The official repo for the ESP32-Based 5 Axis Robotic Arm
+The official repo for the ESP32-Based 5 Axis Robotic Arm(for Hack Club's Macondo)
 
 
 A tracking Sleeve that lets you control a robotic claw, with the movements of your arm. 
 This project repo consists of:
 
 
-*   📁 **`STL Files/`** — The high-strength 3D model parts for each segment of the robot arm chassis.
+*   📁 **`STL Files/`** — The 3D model parts for each segment of the robotic arm(material type varies).
 
 *   📁 **`Firmware/`** — The complete code for the finished product:
  *   `Transmitter_Node.ino` — Code for the wearable sleeve's segments tracking sensor data over ESP-NOW.
