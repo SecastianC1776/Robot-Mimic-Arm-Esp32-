@@ -2,15 +2,13 @@
 
 # Robot Mimic Arm 🦾
 <div align="center">
-  
-[![Hack Club macondo](https://img.shields.io/badge/Hack%20Club-🦋Macondo-FFC800?style=for-the-badge&logo=hack-club&logoColor=red.svg)](https://macondo.hackclub.com)
 </div>
 
 <h4 align="center">
 A 2 Piece robotic project consisting of a sleeve built up of 3 wearable islands of electronics, each with accelerometers, relaying information to the central brain, to mimic your arms motions with a 5 axis robotic arm.
 </h4>
 
-The official repo for the ESP32-Based 5 Axis Robotic Arm(for Hack Club's Macondo)
+The official repo for the ESP32-Based 5 Axis Robotic Arm
 
 
 A tracking Sleeve that lets you control a robotic claw, with the movements of your arm. 
